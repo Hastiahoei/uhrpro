@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Title</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body {
+			font:16px Arial, sans-serif;
+		}
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+		
+		
+#cookiedingsbums a {color:#000; text-decoration:none;}
+
+#cookiedingsbums a:hover {text-decoration:underline;}
+
+#cookiedingsbums div {padding:10px; padding-right:40px;}
+
+#cookiedingsbums { 
+   outline: 1px solid #7b92a9; 
+   text-align:right; 
+   border-top:1px solid #fff;
+   background: #eee; 
+   background: linear-gradient(#ddd ,#eee); 
+   position:fixed;
+   bottom:0px; 
+   z-index:10000; 
+   width:100%; 
+   font-size:12px; 
+   line-height:30px;}
+
+.cookiedingsbumsCloser {
+   color: #333;
+   font: 14px/100% arial, sans-serif;
+   text-decoration: none;
+   text-shadow: 0 1px 0 #fff;
+   cursor:pointer;
+   border:1px solid white; 
+   border-color:white #7b92a9 white #7b92a9;
+   padding:4px 10px;
+   margin-left:10px;
+   background: #ddd; /* Old browsers */
+   background: linear-gradient(#eee,#ddd); 
+ }
+
+.cookiedingsbumsCloser:hover {border-bottom:1px solid white; border-right:1px solid white; border-top:1px solid #7b92a9; border-left:1px solid #7b92a9;}
+
+		.weg {display: none;}
+</style>
+</head>
+<body>
+	<nav><a href="499cookiedingsbums2.html">S2</a></nav>
+	<article>
+	<pre>
+https://www.e-recht24.de/artikel/datenschutz/8451-hinweispflicht-fuer-cookies.html	
+
+https://www.activemind.de/datenschutz/generatoren/
+	
+1. Session-Cookies, Cookies für LogIns oder Warenkörbe, 
+die keine Daten weiter geben, können vom berechtigten 
+Interesse des Webseitenbetreibers abgedeckt sein.
+2. Tracking und Werbe-Cookies von Drittanbietern 
+benötigen eine Einwilligung.
+Das sind also vor allem Cookies, die für die eigentlichen Funktionen 
+der Webseite nicht zwingend notwendig sind 
+und die Daten dann ggf. mit anderen Daten und Diensten 
+verknüpfen oder teilen.
+Nach aktueller Auffassung der Datenschützer reicht so ein 
+bloßer Hinweis zumindest für viele Tracking-Cookies nicht aus. 
+Hier sollten Seitenbetreiber eine echte Einwilligung der Seitenbesucher  einholen. 	
+Merken gewählter Sprache / Design
+  Statistik-Cookies (wer ist wann wo)
+  Marketing-Cookies (gezielte Werbung durch drittanbieter)
+	
+https://www.adsimple.de/adsimple-cookie-manager/ (kostenlos / registrieren zentral gesteuert)
+	</pre>
+	
+	
+	</article>
+	
+	<!-- den Code in JEDE html und zugehöriges css in allgemeine css-Datei -->
+	<div id="cookiedingsbums">
+		<span>Ja, auch diese Webseite verwendet Cookies. </span> 
+		<a href="meineDatenschutzseite.html">Hier erfahrt ihr alles zum Datenschutz</a>
+		<span class="cookiedingsbumsCloser" onclick="document.cookie = 'hidecookiedingsbums=1;path=/';jQuery('#cookiedingsbums').slideUp()">ich akzeptiere</span>
+	</div>
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script>
+		$('#cookiedingsbums').slideDown(2000);
+		 if(document.cookie.indexOf('hidecookiedingsbums=1') != -1){
+		 jQuery('#cookiedingsbums').hide();
+		 }
+		 else{
+			 jQuery('#cookiedingsbums').show();
+		 }
+	</script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Title</title>
+	<style>
+	/*
+	https://www.ideenlounge.de/der-cookie-hinweis-ohne-plugin-ohne-javascript-zum-copypaste-in-zwei-coolen-styles/
+	*/	
+		
+		
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body {
+			font:16px Arial, sans-serif;
+		}
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+		
+		
+#cookiedingsbums a {color:#000; text-decoration:none;}
+
+#cookiedingsbums a:hover {text-decoration:underline;}
+
+
+#cookiedingsbums { 
+   outline: 1px solid #7b92a9; 
+   text-align:center; 
+   border-top:1px solid #fff;
+   background: linear-gradient(#dddddddd ,#eeeeeedd); 
+   position:fixed;
+   top:10vh; 
+left: 50%;
+	transform: translateX(-50%);
+   z-index:10000; 
+   width:50vw; 
+   font-size:1rem; 
+   line-height:2rem;
+	padding:1rem; 
+}
+
+.cookiedingsbumsCloser {
+   color: #333;
+   font: 14px/100% arial, sans-serif;
+   text-decoration: none;
+   text-shadow: 0 1px 0 #fff;
+   cursor:pointer;
+   border:1px solid white; 
+   border-color:white #7b92a9 white #7b92a9;
+   padding:4px 10px;
+   margin-left:10px;
+   background: #ddd; /* Old browsers */
+   background: linear-gradient(#eee,#ddd); 
+ }
+
+.cookiedingsbumsCloser:hover {border-bottom:1px solid white; border-right:1px solid white; border-top:1px solid #7b92a9; border-left:1px solid #7b92a9;}
+	</style>
+</head>
+<body>
+	<nav><a href="499cookiedingsbums.html">S1</a></nav>
+	<article>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem vero sequi veniam? Maiores dolore temporibus consectetur similique ipsum rem, architecto perspiciatis cum recusandae rerum quod voluptatibus illum, labore iste modi suscipit eum facilis incidunt consequatur excepturi et illo tempora. Voluptatibus sapiente ducimus laudantium qui, accusamus nesciunt rerum quam, repellendus, obcaecati quidem eos. Tempora nisi maiores provident, minus. Aut voluptatem, sunt possimus est, quaerat eveniet iusto dolor quos! Cum voluptatibus accusamus dolore fugit, aspernatur, quibusdam praesentium hic delectus minima molestiae atque numquam est. Sapiente totam placeat, qui iusto reprehenderit assumenda non, suscipit cum. Ducimus impedit unde, magnam voluptas fuga, saepe ratione praesentium. Autem dolor, numquam sed et, dolores aperiam non eaque atque blanditiis obcaecati harum aliquid nulla ipsa aspernatur. Recusandae aliquam, consequatur assumenda, tempora, cum nulla sint iste rem nesciunt alias atque eum velit quae iusto reiciendis eaque amet illo. Esse quisquam veritatis quae temporibus alias fugit obcaecati neque eligendi doloremque, architecto necessitatibus dicta itaque quaerat, quos, rerum! Expedita odit magni accusantium, molestiae velit, rem dolor qui porro praesentium impedit unde! Molestias accusantium fugiat ducimus, quam voluptas placeat, in quo? Tempora beatae vitae asperiores et dolore inventore natus vel eveniet, veritatis mollitia dolor ullam officia, obcaecati hic corporis ducimus velit quod?</p>
+	</article>
+	<!-- den Code in JEDE html und zugehöriges css in allgemeine css-Datei -->
+	<div id="cookiedingsbums">
+		<span>Ja, auch diese Webseite verwendet Cookies. </span> 
+		<a href="meineDatenschutzseite.html">Hier erfahrt ihr alles zum Datenschutz</a><br>
+		<span class="cookiedingsbumsCloser" onclick="document.cookie = 'hidecookiedingsbums=1;path=/';jQuery('#cookiedingsbums').slideUp()">ich akzeptiere</span>
+		<span class="cookiedingsbumsCloser" onclick="document.cookie = 'hidecookiedingsbums=1;path=/';jQuery('#cookiedingsbums').slideUp()">nö</span>
+	</div>
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script>
+		 if(document.cookie.indexOf('hidecookiedingsbums=1') != -1){
+		 jQuery('#cookiedingsbums').hide();
+		 }
+		 else{
+			 jQuery('#cookiedingsbums').show();
+		/* jQuery('#cookiedingsbums').prependTo('body');
+		 jQuery('.cookiedingsbumsCloser').show();*/
+		 }
+	</script>
+</body>
+</html>
